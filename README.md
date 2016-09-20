@@ -1,0 +1,2 @@
+# mailchimp
+Mailchimp subscribe wrapper
