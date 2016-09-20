@@ -1,0 +1,23 @@
+{
+  "name": "studioartcz/mailchimp",
+  "description": "mailchimp easy subscribe",
+  "license": "MIT",
+  "keywords": ["mailchimp", "subscribe", "nette"],
+  "authors": [
+    {
+      "name": "Michal Landsman",
+      "email": "landsman@studioart.cz",
+      "homepage": "http://www.studioart.cz/"
+    }
+  ],
+  "require": {
+    "php": ">= 5.6.0",
+    "haltuf/genderer": ">= 0.1",
+    "mailchimp/mailchimp": ">= 2.0.6"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
