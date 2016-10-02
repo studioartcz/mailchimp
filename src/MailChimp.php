@@ -40,7 +40,7 @@ class MailChimp
     public function subscribe()
     {
         $this->chimp = new MailchimpCore($this->apiKey);
-        curl_setopt($this->chimp->ch, CURLOPT_CAINFO, realpath(__DIR__ . '/ssl/cacert.pem'));
+        curl_setopt($this->chimp->ch, CURLOPT_CAINFO, realpath(__DIR__ . '/../ssl/cacert.pem'));
 
         $this->subscriber = $this->getInformation();
         $data             = array_merge($this->subscriber, $this->values);
