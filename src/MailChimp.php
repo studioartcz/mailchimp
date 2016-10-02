@@ -100,7 +100,7 @@ class MailChimp
     {
         if("f" == $this->gender)
         {
-            $csv = fopen(realpath(__DIR__ . '/csv/krestni_zeny.csv'), 'r');
+            $csv = fopen(__DIR__ . '/../csv/krestni_zeny.csv', 'r');
             while ($row = fgetcsv($csv))
             {
                 if (mb_strtoupper($row[1]) === mb_strtoupper($this->firstName))
@@ -112,7 +112,7 @@ class MailChimp
 
         if("m" == $this->gender)
         {
-            $csv = fopen(realpath(__DIR__ . '/csv/krestni_muzi.csv'), 'r');
+            $csv = fopen(__DIR__ . '/../csv/krestni_muzi.csv', 'r');
             while ($row = fgetcsv($csv))
             {
                 if (mb_strtoupper($row[1]) === mb_strtoupper($this->firstName))
